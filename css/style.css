@@ -2,8 +2,123 @@ html{
     font-size: medium;
 }
 
-body{
+
+/* HVIS SKJERMEN ER MELLOM 5000PX OG 1300PX BRED */
+@media screen and (max-width: 5000px) {
+    body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     margin: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-left:-10px;
+      }
+    /* CSS Flexbox for å få bildene ved siden av hverandre på desktop */
+    * {
+        box-sizing: border-box;
+      }
+      
+      .row {
+        display: flex;
+      }
+      .column {
+        flex: 50%;
+        padding: 0px;
+      }
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+      }
+      
+      /* Oval box */
+      #ip1 {
+        border-radius: 18px;
+        background: #A8FCCA;
+        padding: 20px; 
+        width: 300px;
+        height: 10px;    
+        
+    }
+ }
+
+ /* HVIS SKJERMEN ER MINDRE ENN 1300PX BRED */
+ @media screen and (max-width: 1300px) {
+    .hidden-mobile {
+        display: none;
+      }
+    body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 0;
+    }
+img {
+    width: auto;
+    height: 200%;
+    margin-left:-10px;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
+  /* Oval box */
+  #ip1 {
+    /* border-radius: 18px; */
+    background: #A8FCCA;
+    padding: 10px; 
+    width: 200px;
+    height: 5px;    
+    
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+  }
+  .column {
+    flex: 100%;
+    padding: 0px;
+  }
+
+ }

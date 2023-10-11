@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ikoner -->
+    <!-- Link opp til ikoner -->
     <link rel="stylesheet" href="fontawesome/css/all.css">
-    <!-- Link til min css -->
+    <!-- Link opp til min css -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Secondchance.no</title>
+    <title>Secondchance</title>
     
 </head>
 <body>
     <header>
-        <h1 id="logo"> Secondchance</h1>
+        <span>
+            <h1 id="logo"> Secondchance</h1> 
+        </span>
+      
     </header>
-    <section class="container">
+    <section>
         <h2> Shop nå</h2>
 
      <nav>
         <ul>
+            <!-- Hambrugermeny ikon -->
+            <li><a href="#" <i class="fa-solid fa-bars"></i> </a> </li>
             <li><a href="#"> Søk produkt </a> </li>
-            <li><a href="#"> Kvinne </a></li>
-            <li><a href="#"> Herre </a></li>
-            <li><a href="#"> Om oss </a> </li>
+            <!-- Skrevet class="hidden-mobile" for å fjerne teksten på mobil https://www.w3docs.com/snippets/css/how-to-hide-elements-in-a-responsive-layout.html -->
+            <li><a class="hidden-mobile" href="#"> Kvinne </a></li>
+            <li><a class="hidden-mobile" href="#"> Herre </a></li>
+            <li><a class="hidden-mobile" href="#"> Om oss </a> </li>
             <!-- Hjerte ikon -->
             <li><a href="#"> <i class="fa-regular fa-heart"></i> </a> </li>
             <!-- Søk ikon -->
@@ -33,17 +39,31 @@
             <li><a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
             
         </ul>
+
+        <ul2></ul2>
+
+         <!-- Oval box  https://codepen.io/udc10/pen/RwwXamd -->
+         <input type="text" id="ip1" style="border: none;"/>
+
     </nav>
     </section>
     <main>
+         <!--'default-flex' for fleksibel layout -->
+         <section class="default-flex">
         <section>
             <article>
                 <!-- Bilde til forside hentet her https://www.pexels.com/photo/woman-wearing-black-sport-1972115/ -->
                 <!-- Bilde til forside hentet her https://www.pexels.com/photo/person-holding-white-shoes-2787249/  -->
-                <img src="img/pexels-lil-artsy-2787249.jpg" alt="">
-                <img src="img/pexels-wendel-moretti-1972115.jpg" alt="">
+                <div class="row">
+                    <div class="column"> <img src="img/pexels-lil-artsy-2787249.jpg" alt=""> </div>
+                    <!--  Hidden-mobile for å fjerne det ene bilde på mobil funksjon -->
+                    <div class="column"> <img class="hidden-mobile" src="img/pexels-wendel-moretti-1972115 (1).jpg" alt=""> </div>
+                </div>
             </article>
         </section>
     </main>
 </body>
+<footer>
+
+</footer>
 </html>
