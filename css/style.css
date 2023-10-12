@@ -17,7 +17,7 @@ html{
         height: auto;
         margin-left:-10px;
       }
-    /* CSS Flexbox for å få bildene ved siden av hverandre på desktop */
+    /* CSS Flexbox for å få bildene ved siden om side hverandre på desktop */
     * {
         box-sizing: border-box;
       }
@@ -42,6 +42,8 @@ html{
       li {
         float: left;
       }
+
+      /* teksten på forsiden. */
       
       li a {
         display: block;
