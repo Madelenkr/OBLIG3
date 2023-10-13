@@ -1,10 +1,52 @@
-html{
-    font-size: medium;
+*{
+  box-sizing: border-box;
 }
 
 
-/* HVIS SKJERMEN ER MELLOM 5000PX OG 1300PX BRED */
-@media screen and (max-width: 5000px) {
+header{
+  grid-area: header;
+}
+
+nav{
+  grid-area: nav;
+  display: flex;
+}
+main{
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+}
+
+/* Rutenett */
+#grid-container
+  {
+  display:grid;
+  grid-template-areas: "header header header" 
+                        "nav nav nav"
+                        "main main main"
+                        "aside footer footer";
+
+  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 0;
+  row-gap: 1rem;
+  justify-items: start end center stretch;
+  align-content: space-evenly;
+
+}
+
+
+img{
+  width: 100%;
+  height: auto;
+  margin-left:-1 rem;
+}
+
+/* HVIS SKJERMEN ER MELLOM 1200PX OG 1300PX BRED */
+@media screen and (max-width: 1200px) {
     body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +57,7 @@ html{
     img {
         width: 100%;
         height: auto;
-        margin-left:-10px;
+        margin-left:-1 rem;
       }
     /* CSS Flexbox for å få bildene ved siden om side hverandre på desktop */
     * {
@@ -67,7 +109,7 @@ html{
  }
 
  /* HVIS SKJERMEN ER MINDRE ENN 1300PX BRED */
- @media screen and (max-width: 1300px) {
+ @media screen and (max-width: 850px) {
     .hidden-mobile {
         display: none;
       }
@@ -124,4 +166,10 @@ ul {
     padding: 0px;
   }
 
+ }
+
+
+
+ footer{
+  grid-area: footer;
  }
