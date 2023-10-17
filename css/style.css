@@ -3,13 +3,11 @@
 }
 /* Styling av logoen */
 #logo{
-
   color: black;
   text-decoration: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;
+  font-size: 30px;
 }
-
 
 header{
   grid-area: header;
@@ -21,19 +19,49 @@ header{
 /* Dette gjelder for ul-elementet inne i navigasjonen i headeren */
 header nav ul {
   display: flex;
-  gap: 0.5rem;
+  gap: .5rem;
   list-style: none;
 }
 
+.fa-bars::before {
+  content: "\f0c9";
+}
+
+.row h2 {
+position: absolute;
+top: 72%;
+left: 50%;
+transform: translate(-50%, -50%);
+border: 3px solid #A8FCCA;;
+background: #A8FCCA;;
+border-radius: 50px;
+padding: 12px 30px 12px 30px;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+#ip1 {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
 
 nav{
   grid-area: nav;
   display: flex;
+  flex-direction: column;
 }
 
-#icon{
- float: right;
+#serch {
+  text-align: center;
 }
+
+#icon ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  
+}
+
+
 
 main{
   grid-area: main;
@@ -43,6 +71,23 @@ footer{
   grid-area: footer;
 }
 
+footer p {
+  text-align: center;
+}
+
+nav ul{
+  justify-content: center;
+  display: flex;
+}
+
+
+main ul {
+  position: absolute;
+  bottom: -10rem;
+  left: 0%;
+  background: none;
+}
+
 /* Rutenett */
 #grid-container
   {
@@ -50,7 +95,7 @@ footer{
   grid-template-areas: "header header header" 
                         "nav nav nav"
                         "main main main"
-                        "aside footer footer";
+                        "footer footer footer";
 
   
   grid-template-columns: 1fr 1fr 1fr;
@@ -82,6 +127,10 @@ img{
         width: 100%;
         height: auto;
         margin-left:-1 rem;
+      }
+    /* CSS Flexbox for å få bildene ved siden om side hverandre på desktop */
+    * {
+        box-sizing: border-box;
       }
       
       .row {
@@ -124,12 +173,11 @@ img{
         width: 400px;
         height: 15px;    
         margin: 20px;
-            
-      }
+    }
    
  }
 
- /* HVIS SKJERMEN ER MINDRE ENN 1300PX BRED */
+ /* HVIS SKJERMEN ER liten */
  @media screen and (max-width: 850px) {
     .hidden-mobile {
         display: none;
@@ -163,7 +211,7 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 25px;
   }
   
   /* Oval box */
@@ -175,9 +223,6 @@ ul {
     height: 5px;    
     
 }
-* {
-    box-sizing: border-box;
-  }
   
   .row {
     display: flex;
@@ -188,20 +233,3 @@ ul {
   }
 
  }
-
-
-
- footer{
-  grid-area: footer;
- }
- 
- /* HVIS SKJERMEN ER MELLOM 1200PX OG 1300PX BRED */
-@media screen and (min-width: 900px){
-  body {
-  background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin: 0;
-  
-}
-}

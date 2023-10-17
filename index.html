@@ -20,31 +20,33 @@
     </header>
     <nav>
         <section>
-            <h2> Shop nå</h2>
-            <ul>
+            <ul class="navbar">
                 <!-- Hambrugermeny ikon -->
                 <li><a href="#"><i class="fa-solid fa-bars"></i> </a> </li>
-                <li><a href="#"> Søk produkt </a> </li>
-                <!-- Søk ikon -->
-                <li><a href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a> </li>
                 <!-- Skrevet class="hidden-mobile" for å fjerne teksten på mobil https://www.w3docs.com/snippets/css/how-to-hide-elements-in-a-responsive-layout.html -->
                 <li><a class="hidden-mobile" href="#"> Kvinne </a></li>
                 <li><a class="hidden-mobile" href="#"> Herre </a></li>
                 <li><a class="hidden-mobile" href="omoss.html"> Om oss </a> </li>
-            
-            <div id="icon"> 
-                <!-- Person ikon -->
-                <li><a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
-                <!-- Hjerte ikon og endret farge https://www.w3schools.com/css/css_icons.asp-->
-                <li><a href="#"> <i class="fa-regular fa-heart" style=color:#0FA958; ></i> </a> </li>
-                <!-- Handlekurv ikon -->
-                <li><a href="handlekurv.html"> <i class="fa-solid fa-bag-shopping"></i> </a> </li>
+            </ul> 
+        </section>
+        
+        <section>
+            <div id="icon">
+                <ul>
+                    <!-- Person ikon -->
+                    <li><a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
+                    <!-- Hjerte ikon og endret farge https://www.w3schools.com/css/css_icons.asp-->
+                    <li><a href="#"> <i class="fa-regular fa-heart" style=color:#0FA958; ></i> </a> </li>
+                    <!-- Handlekurv ikon -->
+                    <li><a href="handlekurv.html"> <i class="fa-solid fa-bag-shopping"></i> </a> </li>
+                </ul>
              </div>
-             
-            </ul>
-
-         <!-- Oval box  https://codepen.io/udc10/pen/RwwXamd -->
-         <input type="text" id="ip1" style="border: none;"/>
+        </section>
+        <section>
+            <div id="serch">
+                <!-- Oval box  https://codepen.io/udc10/pen/RwwXamd -->
+                <input type="text" id="ip1" style="border: none;" placeholder="Søk produkt...">
+            </div>
         </section>
 
     </nav>
@@ -57,27 +59,42 @@
                 <!-- Bilde til forside hentet her https://www.pexels.com/photo/woman-wearing-black-sport-1972115/ -->
                 <!-- Bilde til forside hentet her https://www.pexels.com/photo/person-holding-white-shoes-2787249/  -->
                 <div class="row">
+                    <h2> Shop nå</h2>
                     <div class="column"> <img src="img/skoholder.jpg" alt=""> </div>
                     <!--  class="Hidden-mobile" for å fjerne det ene bilde på mobil funksjon -->
                     <div class="column"> <img class="hidden-mobile" src="img/jentesko.jpg" alt=""> </div>
+                    <ul>
+                        <!-- Tilleggsinformasjon hvor man finner nettsiden på sosiale medier -->
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram" style=color:#0FA958></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+                    </ul>
                 </div>
                 </section>
             </article>
         </section>
         </section>
     </main>
-    <!-- Tilleggsinformasjon hvor man finner nettsiden på sosiale medier -->
-    <aside>
-        <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram" style=color:#0FA958></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
-        </ul>
-    </aside>
     <!--Footer-->
     <footer>
         <p> Madelen Kristiansen</p>
     </footer>
     </div>
+        <!-- JavaScript-kode til hamburgermeny -->
+        <script>
+            // Finn navigasjonsmenyen
+            let x = document.querySelector(".navbar")
+            // Legg til en hendelseslytter for klikk på menyikonet (ham)
+            document.getElementById("ham").addEventListener("click", (e) => {
+                // Sjekk om navigasjonsmenyen allerede har klassen "responsive"
+                if (x.className === "navbar") {
+                    // Hvis ikke, legg til klassen for responsiv meny
+                    x.className += " responsive";
+                } else {
+                    // Hvis den allerede har klassen, fjern den for å gjøre menyen skjult
+                    x.className = "navbar"
+                }
+            })
+        </script>
 </body>
 </html>
