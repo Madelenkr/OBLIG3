@@ -43,9 +43,10 @@
              </div>
         </section>
         <section>
-            <div id="serch">
+            <div id="search">
                 <!-- Oval box  https://codepen.io/udc10/pen/RwwXamd -->
                 <input type="text" id="ip1" style="border: none;" placeholder="Søk produkt...">
+
             </div>
         </section>
 
@@ -80,21 +81,6 @@
         <p> Madelen Kristiansen</p>
     </footer>
     </div>
-        <!-- JavaScript-kode til hamburgermeny -->
-        <script>
-            // Finn navigasjonsmenyen
-            let x = document.querySelector(".navbar")
-            // Legg til en hendelseslytter for klikk på menyikonet (ham)
-            document.getElementById("ham").addEventListener("click", (e) => {
-                // Sjekk om navigasjonsmenyen allerede har klassen "responsive"
-                if (x.className === "navbar") {
-                    // Hvis ikke, legg til klassen for responsiv meny
-                    x.className += " responsive";
-                } else {
-                    // Hvis den allerede har klassen, fjern den for å gjøre menyen skjult
-                    x.className = "navbar"
-                }
-            })
-        </script>
+
 </body>
 </html>

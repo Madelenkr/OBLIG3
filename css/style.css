@@ -23,9 +23,7 @@ header nav ul {
   list-style: none;
 }
 
-.fa-bars::before {
-  content: "\f0c9";
-}
+
 
 .row h2 {
 position: absolute;
@@ -65,6 +63,11 @@ nav{
 
 main{
   grid-area: main;
+}
+
+.filter{
+display: flex;
+justify-content: space-between;
 }
 
 footer{
@@ -125,6 +128,7 @@ img{
 
     img {
         width: 100%;
+        max-width: 600px;
         height: auto;
         margin-left:-1 rem;
       }
@@ -179,6 +183,9 @@ img{
 
  /* HVIS SKJERMEN ER liten */
  @media screen and (max-width: 850px) {
+  #grid-container{
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
     .hidden-mobile {
         display: none;
       }
@@ -192,6 +199,7 @@ img {
     width: auto;
     height: 100%;
     margin-left:-10px;
+    max-width: 400px;
   }
 ul {
     list-style-type: none;

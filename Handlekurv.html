@@ -13,27 +13,26 @@
 <body>
 <!-- Lager et rutenett -->
     <div id="grid-container">
+
     <header>
         <span>
             <!-- Linket opp til forsiden -->
-            <a href="index.html" class="logo">Secondchance</a>
+            <a href="index.html" id="logo">Secondchance</a>
         </span>
     </header>
+
+
     <nav>
         <section>
-            <h2> Shop nå</h2>
             <ul>
                 <!-- Hambrugermeny ikon -->
                 <li><a href="#"><i class="fa-solid fa-bars"></i> </a> </li>
-                <li><a href="#"> Søk produkt </a> </li>
                 <!-- Skrevet class="hidden-mobile" for å fjerne teksten på mobil https://www.w3docs.com/snippets/css/how-to-hide-elements-in-a-responsive-layout.html -->
-                <li><a class="hidden-mobile" href="#"> Kvinne </a></li>
-                <li><a class="hidden-mobile" href="#"> Herre </a></li>
-                <li><a class="hidden-mobile" href="omoss.html"> Om oss </a> </li>
+                <li><a class="hidden-mobile"> Kvinne </a></li>
+                <li><a class="hidden-mobile"> Herre </a></li>
+                <li><a class="hidden-mobile"> Om oss </a> </li>
                 <!-- Hjerte ikon og endret farge https://www.w3schools.com/css/css_icons.asp-->
                 <li><a href="#"> <i class="fa-regular fa-heart" style=color:#0FA958; ></i> </a> </li> 
-                <!-- Søk ikon -->
-                <li><a href="#"> <i class="fa-solid fa-bars"></i> </a> </li>
                 <!-- Handlekurv ikon -->
                 <li><a href="handlekurv.html"> <i class="fa-solid fa-bag-shopping"></i> </a> </li>
                 <!-- Person ikon -->
@@ -41,32 +40,39 @@
             </ul>
 
          <!-- Oval box  https://codepen.io/udc10/pen/RwwXamd -->
-         <input type="text" id="ip1" style="border: none;"/>
+         <input type="text" id="ip1" style="border: none;" placeholder="Søk produkt...">
         </section>
 
     </nav>
     <main>
-         
 
-        <!--MAIN-->
-        <a>MAIN</a>
+        <section>  
+            <article>
+                <h2>Handlekurv</h2>
+            <img src="img/pngwing.com.png" alt="">
+            <h3>Frakt 59,-</h3>
+            <h3> Å betale =408,-</h3>
+            <h4>Jeg vil motta tilbud</h4>
+              
+                
+            <form method="post" action="#" autocomplete="on">
+                <label for="email">E-postadresse</label>
+                <!--input et selvavsluttende, kan ikke avslutte tagg-->
+                <input type="email" name="email" placeholder="Olanordmann@epost.no" id="email" required>
+                <label for="sign up"> Sign up</label>
+        </article>
+    </section>
+</main>
 
-
-
-
-    </main>
-    <!-- Tilleggsinformasjon hvor man finner nettsiden på sosiale medier -->
-    <aside>
+    <footer>
         <ul>
             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-instagram" style=color:#0FA958></i></a></li>
             <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+            <p>
+                Madelen Kristiansen
+            </p>
         </ul>
-    </aside>
-    <!--Footer-->
-    <footer>
-        <p> Madelen Kristiansen
-        </p>
     </footer>
     </div>
 </body>
