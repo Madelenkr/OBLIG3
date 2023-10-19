@@ -30,9 +30,9 @@
                 <!-- Hambrugermeny ikon -->
                 <li><a href="#"> <i class="fa-solid fa-bars"> </i> </a> </li>
                 <!-- Skrevet class="hidden-mobile" for å fjerne teksten på mobil https://www.w3docs.com/snippets/css/how-to-hide-elements-in-a-responsive-layout.html -->
-                <li><a href="#"> Kvinne </a></li>
-                <li><a href="Produkt.html"> Herre </a></li>
-                <li><a href="omoss.html"> Om oss </a> </li>
+                <li><a class="hidden-mobile"href="#">  Kvinne </a></li>
+                <li><a class="hidden-mobile"href="Produkt.html"> Herre </a></li>
+                <li><a class="hidden-mobile"href="omoss.html"> Om oss </a> </li>
                 <!-- Hjerte ikon og endret farge https://www.w3schools.com/css/css_icons.asp-->
                 <li><a href="#"> <i class="fa-regular fa-heart" style=color:#0FA958; ></i> </a> </li> 
                 <!-- Handlekurv ikon -->
@@ -51,7 +51,9 @@
     <main>
          
         <!--MAIN-->
-     <h4>Hjem-> Herre -> Løpesko</h4>
+     <p>
+        Hjem <i class="fa-solid fa-arrow-right"></i>  Herre <i class="fa-solid fa-arrow-right"></i> Løpesko 
+    </p>
      <section class="filter"
      <h3>Sorter</h3>
      <h3>Filter</h3>
@@ -59,13 +61,15 @@
      
         <!--'default-flex' for fleksibel layout -->
         <section class="default-flex">
-            <section class="flex-container">
+            <section class="nike">
                 <article>
-                     <!-- https://www.pngwing.com/en/free-png-ztmct/download -->
-                    <img src="img/pngwingm.com.png" alt="">
-                    <!-- https://www.pngwing.com/en/free-png-nntyk/download -->
+                     <!-- bilde hentet fra https://www.pngwing.com/en/free-png-ztmct/download -->
+                    <div id="bildeen">
+                         <img src="img/pngwingm.com.png" alt="">
+                     </div>
+                    <!-- bilde hentet fra https://www.pngwing.com/en/free-png-nntyk/download -->
                     <img src="img/pngwing.com.png" alt="">
-                    <!-- https://www.pngwing.com/en/free-png-bvllh/download -->
+                    <!-- bilde hentet fra https://www.pngwing.com/en/free-png-bvllh/download -->
                     <img src="img/pngwings.com.png" alt=""
                     
                 </article>
