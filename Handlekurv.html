@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Link opp til ikoner -->
     <link rel="stylesheet" href="css/font/fontawesome-free-6.4.2-web/css/all.css">
     <!-- Link opp til min css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Link til Google fonts skrifter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
     <title>Secondchance</title>
 </head>
 <body>
@@ -40,39 +46,52 @@
             </ul>
 
          <!-- Oval box  https://codepen.io/udc10/pen/RwwXamd -->
-         <input type="text" id="ip1" style="border: none;" placeholder="Søk produkt...">
+         <div id="search">
+            <input type="text" id="ip1" style="border: none;" placeholder="Søk produkt...">
+         </div>
+
+         <ul id="tilbake">
+            <li><a href="Produkt.html"> <i class="fa-solid fa-arrow-left-long"></i> Fortsett å handle </a> </li>
+         </ul>
+
         </section>
 
     </nav>
     <main>
 
         <section>  
-            <article>
+            <article class="handlekurv">
                 <h2>Handlekurv</h2>
-            <img src="img/pngwing.com.png" alt="">
-            <h3>Frakt 59,-</h3>
-            <h3> Å betale =408,-</h3>
-            <h4>Jeg vil motta tilbud</h4>
-              
-                
-            <form method="post" action="#" autocomplete="on">
+                <img src="img/pngwing.com.png" alt="">
+                <h3>Frakt 59,-</h3>
+                <h3> Å betale = 408,-</h3>
+                <h4> <i class="fa-regular fa-square-check"></i> Ja, jeg vil motta tilbud fra Secondchance.</h4>
+             </article>
+
+             <form id="medlem">
                 <label for="email">E-postadresse</label>
-                <!--input et selvavsluttende, kan ikke avslutte tagg-->
-                <input type="email" name="email" placeholder="Olanordmann@epost.no" id="email" required>
-                <label for="sign up"> Sign up</label>
-        </article>
+                <input type="email" name="email" placeholder="Olanordmann@epost.no" id="mail" required>
+                <label>Sign me up!</label>
+              </form>
+        <div class="h6">
+            <h6>Ved å bli medlem godkjenner du Secondchance, medlemsvilkår og integritetspolicy.</h6>
+            
+        </div>
     </section>
 </main>
-
+   
     <footer>
-        <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram" style=color:#0FA958></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
-            <p>
-                Madelen Kristiansen
-            </p>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" style=color:#0FA958></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+            </ul>
+          </nav> 
+          
+                <p>
+                    Madelen Kristiansen
+                </p>
     </footer>
     </div>
 </body>
