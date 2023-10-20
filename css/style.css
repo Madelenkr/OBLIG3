@@ -66,17 +66,36 @@ main{
 .nike{
   display: flex;
   flex-direction: column-reverse;
+  justify-content: center;
   margin: 10px;
   padding: 30px;
 }
 
-/* fikk inspirasjon av (OpenAI, 2023) for koden, brukte backround-image/size/position som gpt anbefalte */
+/* fikk inspirasjon av (OpenAI, 2023) for koden, koden jeg brukte var "backround-position" som chatgpt anbefalte */
 #bildeen {
-background-color: #A8FCCA;
-background-image: url(png.wing.com.png);
-background-size: cover;
+border-radius: 18px;
+background-color: #a8fcca43;
 background-position: center;
-max-width: 600px;
+max-width: 400px;
+text-align: left;
+font-family: 'Montserrat', sans-serif;
+}
+#bildeto{
+    border-radius: 18px;
+    background-color: #a8fcca43;
+    background-position: center;
+    max-width: 400px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    }
+    #bildetre{
+      border-radius: 18px;
+        background-color: #a8fcca43;
+        background-position: center;
+        max-width: 400px;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+    }  
 }
 
 
@@ -93,6 +112,7 @@ footer{
 
 footer p {
   text-align: center;
+  font-size: small;
 }
 
 nav ul{
