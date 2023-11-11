@@ -30,28 +30,29 @@
         <section>
             <ul>
                 <!-- Hambrugermeny ikon -->
-                <li><a href="#"> <i class="fa-solid fa-bars"> </i> </a> </li>
+                <li><a href="#" title="Hambrugermeny"> <i class="fa-solid fa-bars"> </i> </a> </li>
                 <!-- Skrevet class="hidden-mobile" for å fjerne teksten på mobil https://www.w3docs.com/snippets/css/how-to-hide-elements-in-a-responsive-layout.html -->
                 <li><a class="hidden-mobile" href="#">  Kvinne </a></li>
                 <li><a class="hidden-mobile" href="produkt.html"> Herre </a></li>
                 <li><a class="hidden-mobile" href="omoss.html"> Om oss </a> </li>
                 <li><a href="analyse.html"> Analyse </a> </li>
                 <!-- Hjerte ikon og endret farge https://www.w3schools.com/css/css_icons.asp-->
-                <li><a href="#"> <i class="fa-regular fa-heart" style=color:#0FA958; ></i> </a> </li> 
+                <li><a aria-label="Favoritter" href="#" title="Favoritter"> <i class="fa-regular fa-heart" style=color:#0FA958; ></i> </a> </li> 
                 <!-- Handlekurv ikon -->
-                <li><a href="handlekurv.html"> <i class="fa-solid fa-bag-shopping"></i> </a> </li>
+                <li><a aria-label="Handlekurv" href="handlekurv.html" title="Handlekurv"> <i class="fa-solid fa-bag-shopping"></i> </a> </li>
                 <!-- Person ikon -->
-                <li><a href="#"> <i class="fa-solid fa-user"></i> </a> </li> 
+                <li><a aria-label="Profil" href="#" title="Profil"> <i class="fa-solid fa-user"></i> </a> </li> 
             </ul>
 
             <div id="search">
             <!-- Oval box  https://codepen.io/udc10/pen/RwwXamd -->
+            <label class="sr-only" title="Søk produkt" for="ip1">Søk produkt</label>
          <input type="text" id="ip1" style="border: none;" placeholder="Søk produkt...">
             </div>
         </section>
 
     </nav>
-    <main>
+    <main id="hovedinnhold">
          
         <!--MAIN-->
      <p>
@@ -63,9 +64,10 @@
      </section>
      
         <!--'default-flex' for fleksibel layout -->
-        <section class="default-flex">
+         <section class="default-flex">
             <section class="nike">
                 <article>
+                   
                      <!-- bilde hentet fra https://www.pngwing.com/en/free-png-ztmct/download -->
                     <div id="bildeen">
                         <i class="fa-regular fa-heart"></i> 
@@ -91,7 +93,7 @@
                          <h4> Terrengløpesko til herre, 2 farger</h4>
                          <h3> 299,- </h3>
                     </div>
-                    
+                    <li><a href="#hovedinnhold">Til hovedinnhold</a></li>
                 </article>
         </section>
         </section>
