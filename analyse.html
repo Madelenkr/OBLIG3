@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- lage en beskrivelse til nettsiden min -->
+    <meta name="description" content="Secondchance er en nettbutikk som selger sko
+        som har «skjønnhetsfeil», eller er B-varer"> 
+    <!-- Link opp til ikoner -->
+    <link rel="stylesheet" href="css/font/fontawesome-free-6.4.2-web/css/all.css">
+    <!-- Link opp til min css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link til Google fonts skrifter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Secondchance</title>
+</head>
+<body>
+<!-- Lager et rutenett -->
+    <div id="grid-container">
+    <header>
+
+       
+
+            <span>
+                <a href="index.html" id="logo">Secondchance</a>
+            </span>
+        
+    </header>
+    
+    <nav>
+        <section>
+            <ul class="navbar">
+                <!-- Hambrugermeny ikon -->
+                <li><a href="#"><i class="fa-solid fa-bars"></i> </a> </li>
+                <!-- Skrevet class="hidden-mobile" for å fjerne teksten på mobil https://www.w3docs.com/snippets/css/how-to-hide-elements-in-a-responsive-layout.html -->
+                <li><a class="hidden-mobile" href="#"> Kvinne </a></li>
+                <li><a class="hidden-mobile" href="produkt.html"> Herre </a></li>
+                <li><a class="hidden-mobile" href="omoss.html"> Om oss </a> </li>
+                <li><a href="analyse.html"> Analyse </a> </li>
+            </ul> 
+        </section>
+        
+        <section id="icon">
+                <ul>
+                    <!-- Person ikon -->
+                    <li><a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
+                    <!-- Hjerte ikon og endret farge https://www.w3schools.com/css/css_icons.asp-->
+                    <li><a href="#"> <i class="fa-regular fa-heart" style=color:#0FA958; ></i> </a> </li>
+                    <!-- Handlekurv ikon -->
+                    <li><a href="handlekurv.html"> <i class="fa-solid fa-bag-shopping"></i> </a> </li>
+                </ul>
+        </section>
+
+    </nav>
+
+<main>
+        <section>
+            <div id="search">
+                <!-- Oval box  https://codepen.io/udc10/pen/RwwXamd -->
+                <input type="text" id="ip1" style="border: none;" placeholder="Søk produkt...">
+
+            </div>
+        </section>
+
+    <article>
+        <section>
+
+            <h2> Google Tends</h2>
+
+        <p>
+            Secondchance er en nettside som selger sko til kvinner og menn. skoene vi selger er rettet mot aktive mennesker
+            hvor man får tak i alt fra sportsko, fjellsko, løpesko, joggesko, tur sko. Ifølge Google Tends er Nike veldig poulært merke å søke på.
+            Ved hjelp av Google tends kan jeg få se hvilken nøkkelord som lønner jeg så ha på min nettside. 
+        </p>
+
+        <p>
+          Jeg har derfor valgt nøkkelordene: Nike, Puma, 
+        </p>
+
+        <p>
+          Jeg ser det også er viktig å ha navn på modellen man selger og at man kan skrive dame/ mann/ herre/ kvinne bak navnet på skoene.
+          som for eksempel "Nike Invincible 3 løpesko for vei til herre". da jeg ser dette er en kraftig økning. 
+        </p>
+
+         <img src="img/nikehere.png" alt="Dette er bilde av google tends som viser at det kan lønne seg å skrive nøkkel ord av kjønn bak.">
+
+            <h3> Resultater etter å brukt chatgpt, webaim og lighthouse</h3>
+            <!-- hjelp til å lage tabell https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro -->
+
+    <table class="tabell"
+        <tr>
+            <th>ChatGPT resulater forsiden</th>
+            <th>Lighthouse resulater forsiden</th>
+            <th>Webaim resultater forsiden</th>
+          </tr>
+          <tr>
+            <td> (SEO)Legg til metatags: Legg til meta description og meta keywords. Disse metatagene hjelper søkemotorer med å forstå og indeksere innholdet ditt bedre.</td>
+            <td> Document does not have a meta description</td>
+            <td> 8 Error, 1 X Missing form label </td>
+          </tr>
+          <tr>
+            <td> (SEO)Legg til alt-tekst på bilder: For hvert bilde, inkluder en beskrivende alt-tekst
+            <td>Tap targets are not sized appropriately</td>
+            <td>7 X Empty link</td>
+          </tr>
+          <tr>
+            <td>(SEO) Søkeordsstrategi: Identifiser nøkkelord som er relevante for nettstedet ditt,
+             og inkorporer dem i sidens innhold, spesielt i overskrifter og tekst.</td>
+            <td> </td>
+            <td>Alerts missing first level heading</td>
+          </tr>
+          <tr>
+            <td> (UU) Legg til ARIA-attributter: Bruk ARIA-rolle og ARIA-label-attributter for å forbedre tilgjengeligheten til nettstedet ditt</td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td> (UU) Kontroller kontrast: Sjekk tekst- og bakgrunnsfarger for å sikre tilstrekkelig kontrast.
+            Bruk verktøy som WCAG Color Contrast Checker for å evaluere kontrasten.</td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td> (UU) Semantisk HTML: Bruk semantisk HTML for å merke opp innholdet ditt riktig. For eksempel, bruk nav for navigasjonselementer, h1, h2, osv., for overskrifter, og taggen form for skjemaer.</td>
+            <td> </td>
+            <td> </td>
+          </tr>
+
+          <tr>
+            <td> (UU) Lenker og navigasjon: Merk lenker og navigasjonen klart og beskrivende. Unngå uklare lenketekster som "klikk her."</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td> (UU) Skjemaer og inndata: Merk skjemafeltene og gi riktig beskrivende tekster.</td>
+            <td> </td>
+            <td> </td>
+          </tr>
+
+          <tr>
+            <td>(UU)Skjult tekst: Vurder nøye hvilken tekst som blir skjult på mobil. Sørg for at viktig innhold forblir synlig eller at det finnes alternative måter å få tilgang til den informasjonen. </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+
+          <tr>
+            <td>(UU) Responsiv design: Sørg for at CSS-stilen er responsiv og tilpasser seg forskjellige skjermstørrelser. Test nettstedet ditt på mobile enheter for å sikre at det fungerer bra.</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+    </table>
+
+    <table class="tabell">
+          <th>ChatGPT resulater produktsiden</th>
+          <th>Lighthouse resulater produktsiden</th>
+          <th>Webaim resultater produktsiden</th>
+        </tr>
+        <tr>
+          <td> (SEO) Mangler meta tags som title og meta name="description"> </td>
+          <td> Document does not have a meta description</td>
+          <td> 5 Error, 1 X Missing form label </td>
+        </tr>
+        <tr>
+          <td> (SEO)mangler alternativ tekst på bildene </td>
+          <td>Tap targets are not sized appropriately</td>
+          <td> 4 X Empty link</td>
+        </tr>
+        <tr>
+          <td>(SEO)Feil i koden: Flere steder i koden har du brukt feil i henhold til HTML- og CSS-syntaksen. For eksempel, i "style" -attributtet, bør du bruke dobbelkolon i stedet for enkel kolon: style="color:#0FA958;".</td>
+          <td> document dosen't use legible font sized </td>
+          <td> Alerts missing first level heading</td>
+        </tr>
+        <tr>
+          <td> (UU) Manglende overskrifter: Bruk av overskrifter (f.eks. h1, h2, h3) er viktig for å organisere innholdet og gjøre det lettere å forstå. Det ser ut til at du bruker overskrifter for produkttitler, men du bør også bruke overskrifter for andre viktige deler av innholdet, som "Hjem," "Sorter," og "Filter."</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> (UU) Fargekontrast: Fargevalget for ikonene og tekst på nettstedet kan påvirke lesbarheten for personer med visuelle utfordringer.</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> (UU) Tilgjengelige linker: Du har linker som kun inneholder ikoner, uten tilhørende tekst. Dette kan være forvirrende for brukere som er avhengige av skjermlesere. Du bør legge til tekst som beskriver formålet med disse linkene.</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td> (UU) Alternativ tekst for bilder: Som nevnt tidligere, må du legge til alternativ tekst for bildene for å oppfylle universell utforming. Dette vil hjelpe brukere som ikke kan se bildene å forstå innholdet.</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td> (UU) Skjermleser-kompatibilitet: Selv om koden din inneholder noen ARIA-roller (Accessible Rich Internet Applications), bør du sørge for at hele nettstedet er kompatibelt med skjermlesere og kan navigeres uten problemer.</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+    
+    </table>
+
+    <table class="tabell"
+
+        <th> ChatGPT resulater handlekurvsiden </th>
+        <th>Lighthouse resulater handlekurvsiden</th>
+        <th>Webaim resultater handlekurvsiden</th>
+      </tr>
+      <tr>
+        <td> (SEO) Mangler meta tags som title og meta name="description" </td>
+        <td> Document does not have a meta description</td>
+        <td> 9 Error, 2 X Missing form label </td>
+      </tr>
+      <tr>
+        <td> (SEO) Legg til en favicon: Opprett og inkluder en favicon for å forbedre gjenkjennelighet og brukeropplevelse. Favicon-filen bør hete "favicon.ico" og legges til i roten av nettstedet ditt. </td>
+        <td>links are not crawlable</td>
+        <td> 7 X Empty link</td>
+      </tr>
+      <tr>
+        <td>(SEO) Lenketekst for logo: Forbedre brukeropplevelsen ved å legge til tekst til lenken på logoen. Dette hjelper brukere å forstå hva lenken fører til.</td>
+        <td> document dosen't use legible font sized </td>
+        <td> 1 Contrast Errors 1 X Very low contrast </td>
+      </tr>
+      <tr>
+        <td> (SEO) Optimaliser CSS: Sørg for at CSS-filene er optimaliserte for hastighet ved å fjerne unødvendig CSS-kode og minimere filstørrelsen.</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> (UU) Sosiale medier-ikonfarger: Brukende farger for sosiale medier-ikoner kan forbedre brukeropplevelsen og skape gjenkjennelse. Sørg for at fargen er tilstrekkelig kontrast for lesbarhet. </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> (UU) Test med skjermlesere: Test nettstedet ditt med skjermlesere som VoiceOver (på Mac), NVDA (på Windows), eller JAWS for å sikre at det er godt tilgjengelig for personer med nedsatt syn. </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+
+      <tr>
+        <td> (UU) Legg til etiketter i skjemaet: Forbedre skjemafeltene ved å inkludere etiketter for hvert inndatafelt. Dette hjelper brukere å forstå hva som forventes i hvert felt. </td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td> (UU) Forbedre fargekontrast: Sørg for tilstrekkelig kontrast mellom tekst og bakgrunn for å oppfylle UU-krav. Du kan bruke online verktøy som Color Contrast Checker for å evaluere kontrasten.</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+
+    <tr>
+        <td> Test med skjermlesere: Test nettstedet ditt med skjermlesere som VoiceOver (på Mac), NVDA (på Windows), eller JAWS for å sikre at det er godt tilgjengelig for personer med nedsatt syn.</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+
+  
+  </table>
+
+  <article>
+    <h3> Analysen på forsiden av nettsiden min for SEO</h3>
+                <img src="img/beskrivelse.png" alt="">
+                <p>
+                    Her fikk jeg 90 score, for å fjerne varselen skrev jeg en beskrivelse om nettsiden min som denne koden jeg legger bilde av.
+                </p>
+                <img src="img/meta.png" alt="">
+                <img src="img/tuch.png" alt="">
+
+                <p>
+                    Her måtte jeg endre "magrin 1 rem" på min icon ul for at det skulle bli større avstand fra ikonet mitt fra søke feltet. etter å ha gjort disse endringene fikk jeg 100 score på både mobilversjonen og desktop. 
+                </p>
+
+                <img src="img/seobra.png" alt="">
+
+                <h3> ANalyse på produktsiden min for SEO</h3>
+
+                <img src="img/produkt.png" alt="">
+                <img src="img/produktto.png" alt="">
+
+                <p>
+                    Det startet med en ikke så god score. Jeg fikk 81 SEO, det jeg måtte endre på var også å lage en beskrivelse som jeg har viser ovenfor.
+                    Jeg måtte også sette inn margin 1 rem på css for at det skulle bli større avstand fra søkefeltet mitt til analyse overskriften. 
+                    Deretter tok jeg tekst typen på mobil større, jeg hadde 10 px og endret dette til 12 px.
+
+                </p>
+
+            <img src="img/seoprodukt.png" alt="">
+                <p>
+                    etter å ha endret dette fikk jeg 100 SEO, både på mobil og desktop.
+                </p>
+
+                <h2> Analyse av SEO av handlekurv </h2>
+
+            <img src="img/handlekurv.png" alt="">
+            <img src="img/Handlekurvto.png" alt="">
+
+                <p>
+                    her fikk jeg 83 SEO, samme som sist har jeg måtte endret beskrivelse på nettsiden min.
+                    jeg måtte også endre slik at det ble linket opp, på kvinne og om oss.             
+                </p>
+            <img src="img/handlekurvseoo.png" alt="">
+            <img src="img/handlekurvseo.png" alt="">
+  </article>
+        </body>
+        </html>
+
+        
+        
+        
+    
+            </section>
+     </article>
+</main>
+
+   
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram" style=color:#0FA958></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+        </ul>
+      </nav> 
+      
+            <p>
+                Madelen Kristiansen
+            </p>
+</footer>
+</div>

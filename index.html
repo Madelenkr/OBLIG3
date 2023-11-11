@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- lage en beskrivelse til nettsiden min -->
+    <meta name="description" content="Secondchance er en nettbutikk som selger sko som har «skjønnhetsfeil», eller er B-varer"> 
     <!-- Link opp til ikoner -->
     <link rel="stylesheet" href="css/font/fontawesome-free-6.4.2-web/css/all.css">
     <!-- Link opp til min css -->
@@ -20,9 +21,13 @@
 <!-- Lager et rutenett -->
     <div id="grid-container">
     <header>
-        <span>
-            <a href="index.html" id="logo">Secondchance</a>
-        </span>
+
+       
+
+            <span>
+               <h1><a href="index.html" id="logo">Secondchance</a></h1>
+            </span>
+        
     </header>
     
     <nav>
@@ -32,21 +37,28 @@
                 <li><a href="#"><i class="fa-solid fa-bars"></i> </a> </li>
                 <!-- Skrevet class="hidden-mobile" for å fjerne teksten på mobil https://www.w3docs.com/snippets/css/how-to-hide-elements-in-a-responsive-layout.html -->
                 <li><a class="hidden-mobile" href="#"> Kvinne </a></li>
-                <li><a class="hidden-mobile" href="Produkt.html"> Herre </a></li>
+                <li><a class="hidden-mobile" href="produkt.html"> Herre </a></li>
                 <li><a class="hidden-mobile" href="omoss.html"> Om oss </a> </li>
+                <li><a href="analyse.html"> Analyse </a> </li>
             </ul> 
         </section>
         
         <section id="icon">
-                <ul>
-                    <!-- Person ikon -->
-                    <li><a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
+                <ul> 
                     <!-- Hjerte ikon og endret farge https://www.w3schools.com/css/css_icons.asp-->
                     <li><a href="#"> <i class="fa-regular fa-heart" style=color:#0FA958; ></i> </a> </li>
+                    <!-- Person ikon -->
+                    
+                    <li><a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
+                   
                     <!-- Handlekurv ikon -->
                     <li><a href="handlekurv.html"> <i class="fa-solid fa-bag-shopping"></i> </a> </li>
                 </ul>
         </section>
+
+    </nav>
+    <main>
+
         <section>
             <div id="search">
                 <!-- Oval box  https://codepen.io/udc10/pen/RwwXamd -->
@@ -54,9 +66,6 @@
 
             </div>
         </section>
-
-    </nav>
-    <main>
          <!--'default-flex' for fleksibel layout -->
          <section class="default-flex">
         <section class="flex-container">

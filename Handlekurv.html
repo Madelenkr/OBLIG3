@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+     <!-- lage en beskrivelse til nettsiden min -->
+     <meta name="description" content="Secondchance er en nettbutikk som selger sko som har «skjønnhetsfeil», eller er B-varer"> 
     <!-- Link opp til ikoner -->
     <link rel="stylesheet" href="css/font/fontawesome-free-6.4.2-web/css/all.css">
     <!-- Link opp til min css -->
@@ -32,26 +33,36 @@
         <section>
             <ul>
                 <!-- Hambrugermeny ikon -->
-                <li><a href="#"><i class="fa-solid fa-bars"></i> </a> </li>
+                <li><a href="#" title="Hambrugermeny"><i class="fa-solid fa-bars"></i> </a> </li>
                 <!-- Skrevet class="hidden-mobile" for å fjerne teksten på mobil https://www.w3docs.com/snippets/css/how-to-hide-elements-in-a-responsive-layout.html -->
-                <li><a class="hidden-mobile"> Kvinne </a></li>
-                <li><a href="Produkt.html" class="hidden-mobile"> Herre </a></li>
-                <li><a class="hidden-mobile"> Om oss </a> </li>
+                <li><a class="hidden-mobile" href="#"> Kvinne </a></li>
+                <li><a class="hidden-mobile" href="produkt.html"> Herre </a></li>
+                <li><a class="hidden-mobile" href="omoss.html"> Om oss </a> </li>
+                <li><a href="analyse.html"> Analyse </a> </li>
+               
+               
+                <!-- <li><a class="hidden-mobile"> Kvinne </a></li> -->
+                <!-- <li><a href="Produkt.html" class="hidden-mobile"> Herre </a></li> -->
+                <!-- <li><a class="hidden-mobile"> Om oss </a> </li> -->
+                <!-- <li><a href="analyse.html"> Analyse </a> </li> -->
+                
                 <!-- Hjerte ikon og endret farge https://www.w3schools.com/css/css_icons.asp-->
-                <li><a href="#"> <i class="fa-regular fa-heart" style=color:#0FA958; ></i> </a> </li> 
+                <li><a href="#" title="Favoritt"> <i class="fa-regular fa-heart" style=color:#0FA958; ></i> </a> </li>
                 <!-- Handlekurv ikon -->
-                <li><a href="handlekurv.html"> <i class="fa-solid fa-bag-shopping"></i> </a> </li>
+                <li><a href="handlekurv.html" title="Handlekurv"> <i class="fa-solid fa-bag-shopping"></i> </a> </li>
                 <!-- Person ikon -->
-                <li><a href="#"> <i class="fa-solid fa-user"></i> </a> </li> 
+                <li><a href="#" title="Profil"> <i class="fa-solid fa-user"></i> </a> </li>
             </ul>
 
          <!-- Oval box  https://codepen.io/udc10/pen/RwwXamd -->
          <div id="search">
+            <!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_hlp_sr-only&stacked=h -->
+            <label class="sr-only" title="Søk produkt" for="ip1">Søk produkt</label>
             <input type="text" id="ip1" style="border: none;" placeholder="Søk produkt...">
          </div>
 
          <ul id="tilbake">
-            <li><a href="Produkt.html"> <i class="fa-solid fa-arrow-left-long"></i> Fortsett å handle </a> </li>
+            <li><a href="produkt.html"> <i class="fa-solid fa-arrow-left-long"></i> Fortsett å handle </a> </li>
          </ul>
 
         </section>
@@ -70,7 +81,7 @@
              </article>
 
              <form id="medlem">
-                <label>E-postadresse</label>
+                <label for="mail">E-postadresse</label>
                 <input type="email" name="email" placeholder="Olanordmann@epost.no" id="mail" required>
                 <label>Sign up</label>
               </form>
@@ -84,9 +95,9 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram" style=color:#0FA958></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+                <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" title="Instagram,"><i class="fa-brands fa-instagram" style=color:#0FA958></i></a></li>
+                <li><a href="#" title="Snapchat"><i class="fa-brands fa-snapchat"></i></a></li>
             </ul>
           </nav> 
           

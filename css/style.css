@@ -43,16 +43,18 @@ box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 nav{
   grid-area: nav;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #search {
   text-align: center;
+  margin: 1rem;
 }
 
 #icon ul {
   list-style-type: none;
-  margin: 0;
+  margin: 1rem;
   padding: 0;
   float: right;
   
@@ -138,11 +140,11 @@ main ul {
                         "footer footer footer";
 
   
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-rows: auto auto auto; */
   column-gap: 0;
   row-gap: 1rem;
-  justify-items: start end center stretch;
+  /* justify-items: start end center stretch; */
   align-content: space-evenly;
 
 }
@@ -170,8 +172,10 @@ img{
   
 .h6{
   font-family: 'Montserrat', sans-serif;
-  color: rgb(149, 149, 149); 
+  color: black; 
 }
+
+
 
 /* HVIS SKJERMEN til desktop */
 @media screen and (min-width: 900px) {
@@ -180,7 +184,7 @@ img{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     margin: 10px;
-    display: inline-flex;
+    /* display: inline-flex; */
     }
 
     img {
@@ -236,6 +240,21 @@ img{
         height: 15px;    
         margin: 20px;
     }
+    /* Kolonne i analysen https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro */
+    .tabell {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
    
  }
 
@@ -250,7 +269,7 @@ img{
     body{
     background-color: white;
     font-family:'Montserrat', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     margin: 0;
     }
 img {
